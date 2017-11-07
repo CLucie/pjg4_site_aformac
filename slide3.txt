@@ -1,0 +1,5 @@
+Excercie qu'on a du réalisé pendant un week-end.
+Exercice de CSS pour s'entrainer pour diviser une page en trois et mettre des images les une sur les autres.
+Exercice de Bootstrap réalisé sans aucune ligne de CSS rajouter.
+Premier exercice de JavaScript qui consistait à faire un questionnaire avec calcul des points et affichage des réponse juste ou fausse.
+Nous devions réalisé pour cette excercice le jeu du MasterMind en Javascript.
