@@ -31,7 +31,7 @@
 			  </li>
 
 			  <li class="nav-item dropdown">
-				<a class="nav-link text-white dropdown-toggle" href="#sm-1" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<a class="nav-link text-white dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				  Présentation
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -146,7 +146,7 @@
 			<div class="row justify-content-center">
 				<div class="col-6">
 
-				<form id="contact" class="px-5 py-2 bg-dark rounded" method="POST" action="./inc/test.php">
+				<form id="contact" class="px-5 py-2 bg-dark rounded" method="POST">
 
 				  <div class="form-group text-center m-0">
 					<label for="labelNotice" class="text-white text-center">* Champs Obligatoires</label>
@@ -197,7 +197,7 @@
 				  </div>
 				
 				</form>
-				<div class="statusFormulaire"></div>
+				<div id="statusFormulaire"></div>
 			</div>
 		</div>
 		</section>
