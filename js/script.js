@@ -13,7 +13,8 @@ $(document).ready(function(){
 	});
 
 	//Sur sélection dans le menu
-	$('.nav-item').click(function(){
+	$('.nav-item,.dropdown-item').click(function(e){
+				e.preventDefault();
 		var test = $(this).children('a').attr('href');
 
 		if(test == "sm-1") {
@@ -61,6 +62,7 @@ $(document).ready(function(){
 		 	data : 'nom=' + $('#inputNom').val() + '&prenom=' + $('#inputPrenom').val() + '&email=' + $('#inputEmail').val() + '&phone=' + $('#inputPhone').val() + '&objet=' + $('#inputObjet').val() + '&message=' + $('#inputMessage').val(),
 		 	dataType : 'html',
 		 	success : function(code_html, statut){ //success
+				alert("success");
 				$("#statusFormulaire").html(code_html);},
 			error : function(resultat, statut, erreur){ //en cas d'esseur
 				alert('Ajax Error: ' + statut + erreur);}
