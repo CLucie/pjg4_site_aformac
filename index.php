@@ -67,7 +67,7 @@
 
 		<!-- Section 1 - Accueil -->
 		<section class="container-fluid" id='sec-1'>
-			<div class="text-center"><h1>Accueil</h1></div>
+			<!-- <div class="text-center"><h1>Accueil</h1></div> -->
 			<div class="row justify-content-center">
 				<?php require_once "./inc/accueil.inc.php";?>
 			</div>
@@ -103,10 +103,8 @@
 
 		<!-- Section 6 - Adresse -->
 		<section class="" id='sec-6'>
-			<div class="text-center"><h1>Adresse</h1></div>
-			
+			<!-- <div class="text-center"><h1>Adresse</h1></div> -->
 				<?php require_once "./inc/maps.inc.php"; ?>			
-			
 		</section>
 
 		<!-- Section 7 - Contact -->
