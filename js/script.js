@@ -13,17 +13,14 @@ $(document).ready(function(){
 	});
 
 	//Sur sélection dans le menu
-	$('.nav-item,.dropdown-item').click(function(e){
-				e.preventDefault();
+	$('.nav-item').click(function(){
 		var test = $(this).children('a').attr('href');
 
-		if(test == "sm-1") {
-			console.log(test);
-		} else {
-			$('html').animate({scrollTop:$(test).offset().top},1000);
-		}
+		console.log("avant: " + test);
+		console.log("apres: " + test);
+		$('html').animate({scrollTop:$(test).offset().top},1000);
 	});
-
+		
 	//Sur bouton Envoi du formulaire
 	$('#envoi').click(function(e){
 
@@ -67,7 +64,6 @@ $(document).ready(function(){
 			error : function(resultat, statut, erreur){ //en cas d'esseur
 				alert('Ajax Error: ' + statut + erreur);}
  		});
-
 	});
 
 	//Slide et Réduction d'images
@@ -88,6 +84,7 @@ $(document).ready(function(){
 			$("#slidemini5").css("display" , "flex");
 		}
 	});
+
 	$('#slidemini2').click(function(){
 		if ($(this).attr("src") == "./images/slide2mini.png") {
 			$(this).attr("src" , "./images/slide2agrandi.png");
@@ -106,6 +103,7 @@ $(document).ready(function(){
 			$("#slidemini5").css("display" , "flex");
 		}
 	});
+
 	$('#slidemini3').click(function(){
 		if ($(this).attr("src") == "./images/slide3mini.png") {
 			$(this).attr("src" , "./images/slide3agrandi.png");
@@ -123,6 +121,7 @@ $(document).ready(function(){
 			$("#slidemini5").css("display" , "flex");
 		}
 	});
+
 	$('#slidemini4').click(function(){
 		if ($(this).attr("src") == "./images/slide4mini.png") {
 			$(this).attr("src" , "./images/slide4agrandi.png");
@@ -140,6 +139,7 @@ $(document).ready(function(){
 			$("#slidemini5").css("display" , "flex");
 		}
 	});
+
 	$('#slidemini5').click(function(){
 		if ($(this).attr("src") == "./images/slide5mini.png") {
 			$(this).attr("src" , "./images/slide5agrandi.png");
@@ -157,11 +157,10 @@ $(document).ready(function(){
 			$("#slidemini1").css("display" , "flex");
 		}
 	});
-
-
-
+	
 });
 
+// AUTRES FONCTIONS
 // Fonction d'affichage de la map Adresse
 function initMap() {
 	var map;
@@ -170,7 +169,6 @@ function initMap() {
 	  zoom: 17
 	});
 }
-
 
 //Fonction de vérification du champs email
 function isEmail(email) {
