@@ -94,10 +94,6 @@ h1, h2, h3, h4, h5, h6, nav{
 }
 
 /*css section présentation formation*/
-#titleFormation{
-  margin-top: 2%;
-}
-
 #secPresformation{
   background-color: #464646;
   color: #ffffff;
@@ -129,10 +125,6 @@ h2{
 h3{
   font-size: 1.1rem;
   font-style: italic;
-}
-
-#titleTechnos{
-  margin-top: 2%;
 }
 
 #rowMetier2{
@@ -167,10 +159,6 @@ h3{
 @media screen and (max-width: 640px){
 
   /*css section présentation formation*/
-  #titleFormation{
-    margin-top: 2%;
-  }
-
   #secPresformation{
     background-color: #ffffff;
     color: #000000;
