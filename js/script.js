@@ -1,12 +1,12 @@
-// Fonction au chargement de la page et évènements
+// Fonction principale au chargement de la page et évènements
 $(document).ready(function(){
 
-	//Calcul la taille des section selon la taille de la fenêtre
+	//Calcul la taille des section selon la taille de la fenêtre au chargement
 	//$('section').css('height',$(window).height().toString()+"px");
 	$('section').css('height',$(window).height().toString()+"px");
 	$('section').css('paddingTop',($('nav').height()*2).toString()+"px");
-	
-	//Recalcul en fonction de la taille de la fenêtre
+
+	//Recalcul en fonction de la taille de la fenêtre durant la navigation
 	$(window).resize(function(){
 		$('section').css('height',$(window).height().toString()+"px");
 		$('section').css('paddingTop',($('nav').height()*2).toString()+"px");
@@ -15,12 +15,25 @@ $(document).ready(function(){
 	//Sur sélection dans le menu
 	$('.nav-item').click(function(){
 		var test = $(this).children('a').attr('href');
-
-		console.log("avant: " + test);
-		console.log("apres: " + test);
-		$('html').animate({scrollTop:$(test).offset().top},1000);
-	});
 		
+		if(test != '#') {
+		$('html').animate({scrollTop:$(test).offset().top},1000);	
+		}
+		
+
+	}); //fin sélection de menu
+
+	//Sur sélection dans le sous-menu
+  $('.dropdown-menu').on("click", function(e){
+    toto = $(this).next();
+    console.log(toto);
+    e.stopPropagation();
+    e.preventDefault();
+
+	}); //fin sélection de sous-menu
+
+
+
 	//Sur bouton Envoi du formulaire
 	$('#envoi').click(function(e){
 
@@ -66,6 +79,9 @@ $(document).ready(function(){
  		});
 	});
 
+
+}); // fin de la fonction principale
+	
 	//Slide et Réduction d'images
 	$('#slidemini1').click(function(){
 		if ($(this).attr("src") == "./images/slide1mini.png") {
@@ -75,29 +91,10 @@ $(document).ready(function(){
 			$("#slidemini3").css("display" , "none");
 			$("#slidemini4").css("display" , "none");
 			$("#slidemini5").css("display" , "none");
-		}else {
+		} else {
 			$(this).attr("src" , "./images/slide1mini.png");
 			$("#figimg1").toggleClass("disparait");
 			$("#slidemini2").css("display" , "flex");
-			$("#slidemini3").css("display" , "flex");
-			$("#slidemini4").css("display" , "flex");
-			$("#slidemini5").css("display" , "flex");
-		}
-	});
-
-	$('#slidemini2').click(function(){
-		if ($(this).attr("src") == "./images/slide2mini.png") {
-			$(this).attr("src" , "./images/slide2agrandi.png");
-			$("#figimg2").toggleClass("disparait");
-			$("#slidemini1").css("display" , "none");
-			$("#slidemini3").css("display" , "none");
-			$("#slidemini4").css("display" , "none");
-			$("#slidemini5").css("display" , "none");
-		}else {
-			$(this).attr("src" , "./images/slide2mini.png");
-			$("#figimg2").toggleClass("disparait");
-			$("#slidemini2").css("display" , "flex");
-			$("#slidemini1").css("display" , "flex");
 			$("#slidemini3").css("display" , "flex");
 			$("#slidemini4").css("display" , "flex");
 			$("#slidemini5").css("display" , "flex");
@@ -112,7 +109,7 @@ $(document).ready(function(){
 			$("#slidemini1").css("display" , "none");
 			$("#slidemini4").css("display" , "none");
 			$("#slidemini5").css("display" , "none");
-		}else {
+		} else {
 			$(this).attr("src" , "./images/slide3mini.png");
 			$("#figimg3").toggleClass("disparait");
 			$("#slidemini2").css("display" , "flex");
@@ -130,7 +127,7 @@ $(document).ready(function(){
 			$("#slidemini3").css("display" , "none");
 			$("#slidemini1").css("display" , "none");
 			$("#slidemini5").css("display" , "none");
-		}else {
+		} else {
 			$(this).attr("src" , "./images/slide4mini.png");
 			$("#figimg4").toggleClass("disparait");
 			$("#slidemini2").css("display" , "flex");
@@ -148,7 +145,7 @@ $(document).ready(function(){
 			$("#slidemini3").css("display" , "none");
 			$("#slidemini4").css("display" , "none");
 			$("#slidemini1").css("display" , "none");
-		}else {
+		} else {
 			$(this).attr("src" , "./images/slide5mini.png");
 			$("#figimg5").toggleClass("disparait");
 			$("#slidemini2").css("display" , "flex");
@@ -157,8 +154,7 @@ $(document).ready(function(){
 			$("#slidemini1").css("display" , "flex");
 		}
 	});
-	
-});
+
 
 // AUTRES FONCTIONS
 // Fonction d'affichage de la map Adresse
