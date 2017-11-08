@@ -13,11 +13,11 @@ $(document).ready(function(){
 	});
 
 	//Sur sélection dans le menu
-	$('.nav-item').click(function(){
-		var test = $(this).children('a').attr('href');
+	$('.lien').click(function(){
+		var lien = $(this).attr('href');
 		
-		if(test != '#') {
-		$('html').animate({scrollTop:$(test).offset().top},1000);	
+		if(lien != '#') {
+		$('html').animate({scrollTop:$(lien).offset().top},1000);	
 		}
 		
 
