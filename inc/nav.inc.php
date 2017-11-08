@@ -1,5 +1,5 @@
-<div class="pos-f-t fixed-top">
-  <nav id="nav2" class="navbar navbar-dark bg-dark float-right">
+<div  id="nav2" class="pos-f-t fixed-top">
+  <nav class="navbar navbar-dark bg-dark float-right">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
