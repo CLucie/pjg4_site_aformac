@@ -108,112 +108,71 @@
 		</section>
 
 		<!-- Section 7 - Contact -->
-		<section class="container-fluid bg-info" id='sec-7'>
-			<div class="container bg-danger">
-<!-- 				<?php
-					//Apple du fichier contenant les fonctions de traitement du formulaire
-					require_once './inc/functions_inc.php';
+		<section class="container-fluid" id='sec-7'>
+			<div class="container">
 
-					//si le formulaire est posté, on traite les données
-					if(!empty($_POST['inputNom'])){
-						$nom = htmlspecialchars($_POST['inputNom']);
-						$prenom = htmlspecialchars($_POST['inputPrenom']);
-						$email = htmlspecialchars($_POST['inputEmail']);
-						$objet = htmlspecialchars($_POST['inputObjet']);
-						$message = htmlspecialchars($_POST['inputMessage']);
-
-						$nom     = format_nom($nom);
-						$prenom  = format_prenom($prenom);
-						$email   = format_email($email);
-						$objet   = format_objet($objet);
-						$message = format_message($message);
-
-						//Si toutes les variables sont définies, on envoie le mail
-						if($nom != null && $email != null && $objet != null && $message != null) {
-							//envoiMail($email,$objet,$message,$nom);
-							echo ("envoi du mail");
-						}
-					}
-				?>
- -->	 		<!-- 1° Vérifier avec JS que le formulaire est correctement rempli -->
+		 		<!-- 1° Vérifier avec JS que le formulaire est correctement rempli -->
 				<!-- 2° Envoyer en AJAX au PHP -->
 				<!-- 3° Vérifier dans PHP que le formulaire est correct -->
 				<!-- 4° Envoyer le mail -->
-
 				
 				<h1 class="text-center">Contact</h1>
 				
-				<div class="row justify-content-center bg-primary">
+				<div class="row justify-content-center">
 
-						<form id="contact" class="col-8 px-4 py-2 bg-dark text-white rounded">
+					<form id="contact" class="col-sm-8 px-4 py-2 bg-dark text-white rounded">
 
-						  <div class="form-row justify-content-center">
-							  <div class="form-group text-center">
-								<label for="labelNotice" class="">* Champs Obligatoires</label>
-							  </div>
+						  <div class="form-group row justify-content-center">
+							<label for="labelNotice" class="text-center">* Champs Obligatoires</label>
 						  </div>
 
-						  <div class="form-row justify-content-center bg-success">
-							  <div class="form-group">
-								<label for="labelNom" class="col-form-label text-right">*Nom :</label>
-								<div class="">
-								  <input type="text" class="form-control rounded" id="inputNom">
-								</div>
-							  </div>
+						  <div class="form-group row justify-content-center">
+							<label for="labelNom" class="col-sm-2 col-form-label text-right">*Nom :</label>
+							<div class="col-sm-8">
+							  <input type="text" class="form-control rounded" id="inputNom">
+							</div>
 						  </div>
 
-						  <div class="form-row justify-content-center">
-							  <div class="form-group">
-								<label for="labelPrenom" class="col-form-label text-right">*Prénom :</label>
-								<div class="">
-								  <input type="text" class="form-control rounded" id="inputPrenom">
-								</div>
-							  </div>
+						  <div class="form-group row justify-content-center">
+							<label for="labelPrenom" class="col-sm-2 col-form-label text-right">*Prénom :</label>
+							<div class="col-sm-8">
+							  <input type="text" class="form-control rounded" id="inputPrenom">
+							</div>
 						  </div>
 
-						  <div class="form-row justify-content-center">
-							  <div class="form-group">
-								<label for="labelEmail" class="col-form-label text-right">*Mail :</label>
-								<div class="">
-								  <input type="email" class="form-control rounded" id="inputEmail">
-								</div>
-							  </div>
+						  <div class="form-group row justify-content-center">
+							<label for="labelEmail" class="col-sm-2 col-form-label text-right">*Mail :</label>
+							<div class="col-sm-8">
+							  <input type="email" class="form-control rounded" id="inputEmail">
+							</div>
 						  </div>
 
-						  <div class="form-row justify-content-center">
-							  <div class="form-group">
-								<label for="labelPhone" class="col-form-label text-right">Téléphone :</label>
-								<div class="">
-								  <input type="text" class="form-control rounded" id="inputPhone">
-								</div>
-							  </div>
+						  <div class="form-group row justify-content-center">
+							<label for="labelPhone" class="col-sm-2 col-form-label text-right">Téléphone :</label>
+							<div class="col-sm-8">
+							  <input type="text" class="form-control rounded" id="inputPhone">
+							</div>
 						  </div>
 
-						  <div class="form-row justify-content-center">
-							  <div class="form-group">
-								<label for="labelObjet" class="col-form-label text-right">*Sujet :</label>
-								<div class="">
-								  <input type="text" class="form-control rounded" id="inputObjet">
-								</div>
-							  </div>
+						  <div class="form-group row justify-content-center">
+							<label for="labelObjet" class="col-sm-2 col-form-label text-right">*Sujet :</label>
+							<div class="col-sm-8">
+							  <input type="text" class="form-control rounded" id="inputObjet">
+							</div>
 						  </div>
 
-						  <div class="form-row justify-content-center">
-							  <div class="form-group text-center">
-								<label for="labelMessage" class="">*Message :</label>
-								<textarea class="form-control rounded" id="inputMessage" rows="3"></textarea>
-							  </div>
+						  <div class="form-group row justify-content-center">
+							<label for="labelMessage" class="col-12 text-center">*Message :</label>
+							<textarea class="col-sm-10 form-control rounded" id="inputMessage" rows="3"></textarea>
 						  </div>
 
-						  <div class="form-row justify-content-center">
-							<input id="envoi" class="btn btn-lg" type="submit" name="Envoi" value="Envoi" style="background-color: #000000; color:white">
-						  </div>
+					  <div class="form-row justify-content-center">
+						<input id="envoi" class="btn btn-lg" type="submit" name="Envoi" value="Envoi" style="background-color: #000000; color:white">
+					  </div>
 
-						  <div id="statusFormulaire"></div>
+					  <div id="statusFormulaire"></div>
 
-						</form>
-
-						
+					</form>
 
 				</div>
 			</div>

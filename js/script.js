@@ -19,8 +19,6 @@ $(document).ready(function(){
 		if(lien != '#') {
 		$('html').animate({scrollTop:$(lien).offset().top},1000);	
 		}
-		
-
 	}); //fin sélection de menu
 
 	//Sur sélection dans le sous-menu
@@ -67,12 +65,11 @@ $(document).ready(function(){
 		}
 
 		$.ajax({ //Fonction AJAX (séparer les paramètres par une "virgule")
-			url : './inc/test.php',
+			url : './inc/verif_send_mail.inc.php',
 		 	type : 'POST',
 		 	data : 'nom=' + $('#inputNom').val() + '&prenom=' + $('#inputPrenom').val() + '&email=' + $('#inputEmail').val() + '&phone=' + $('#inputPhone').val() + '&objet=' + $('#inputObjet').val() + '&message=' + $('#inputMessage').val(),
 		 	dataType : 'html',
 		 	success : function(code_html, statut){ //success
-				alert("success");
 				$("#statusFormulaire").html(code_html);},
 			error : function(resultat, statut, erreur){ //en cas d'esseur
 				alert('Ajax Error: ' + statut + erreur);}
@@ -100,6 +97,25 @@ $(document).ready(function(){
 			$("#slidemini5").css("display" , "flex");
 		}
 	});
+
+	$('#slidemini2').click(function(){
+	        if ($(this).attr("src") == "./images/slide2mini.png") {
+	            $(this).attr("src" , "./images/slide2agrandi.png");
+	            $("#figimg2").toggleClass("disparait");
+	            $("#slidemini1").css("display" , "none");
+	            $("#slidemini3").css("display" , "none");
+	            $("#slidemini4").css("display" , "none");
+	            $("#slidemini5").css("display" , "none");
+	        }else {
+	            $(this).attr("src" , "./images/slide2mini.png");
+	            $("#figimg2").toggleClass("disparait");
+	            $("#slidemini2").css("display" , "flex");
+	            $("#slidemini1").css("display" , "flex");
+	            $("#slidemini3").css("display" , "flex");
+	            $("#slidemini4").css("display" , "flex");
+	            $("#slidemini5").css("display" , "flex");
+	        }
+	    });
 
 	$('#slidemini3').click(function(){
 		if ($(this).attr("src") == "./images/slide3mini.png") {
