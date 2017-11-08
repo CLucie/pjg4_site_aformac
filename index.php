@@ -85,7 +85,7 @@
 			<div class="text-center"><h1>Métiers</h1></div>
 			<?php require_once "./inc/presMetiers.inc.php"; ?>
 			
-			<div class="text-center"><h1>Technos</h1></div>
+			<div id="titleTechnos" class="text-center"><h1>Technos</h1></div>
 			<?php require_once "./inc/presTechnos.inc.php"; ?>
 		</section>
 
@@ -205,7 +205,7 @@
 	<!-- footer -->
 	<footer class="bg-dark text-white">
 		<div class="text-center">
-			<p>Ceci est le footer</p>
+			<p>&copy; 2017</p>
 		</div>
 	</footer>
 

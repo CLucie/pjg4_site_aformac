@@ -5,7 +5,7 @@
       $ligne=fgets($equipe);
       $ligne_explode=explode("|", $ligne);
       echo'
-      <div class="col-3 border border-dark jumbotron text-center">
+      <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12 border border-dark jumbotron text-center">
       <img src=./images/'.$ligne_explode[0].' alt="Avatar" class="avatar">
       <h2>'.$ligne_explode[1].'</h2>
       <p>'.$ligne_explode[2].'</p>

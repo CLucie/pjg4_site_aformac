@@ -103,6 +103,13 @@ h1, h2, h3, h4, h5, h6, nav{
   height: 40%;
   width: 40%;
 }
+
+@media screen and (max-width: 640px){
+  #imgFormation{
+    width: 100%;
+    margin-bottom: 3.5%;
+  }
+}
 /*fin css section présentation formation*/
 
 /*----*/
@@ -115,7 +122,8 @@ h1, h2, h3, h4, h5, h6, nav{
 }
 
 #imgMetier, #imgTechno{
-  height: 20%;
+  height: 10%;
+  width: 10%;
 }
 
 h2{
@@ -127,8 +135,14 @@ h3{
   font-style: italic;
 }
 
-#rowMetier2{
+#titleTechnos{
   margin-top: 2%;
+}
+
+@media screen and (max-width: 640px){
+  #imgMetier, #imgTechno{
+    width: 100%;
+  }
 }
 /*fin CSS présentation formation*/
 
@@ -143,13 +157,20 @@ h3{
 
 .logo{
   height: auto;
-  width: 15%;
+  width: 25%;
   margin-left: 2%;
   margin-right: 2%;
 }
 
 .link, .logo{
   text-decoration: none;
+}
+
+@media screen and (max-width: 575px){
+  .logo{
+    width: 15%;
+  }
+}
 }
 /*fin CSS présentation équipe*/
 
@@ -162,10 +183,6 @@ h3{
   #secPresformation{
     background-color: #ffffff;
     color: #000000;
-  }
-
-  #imgFormation{
-    height: 10%;
   }
   /*fin css section présentation formation*/
 
