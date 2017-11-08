@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"alig",
+				"align-self-center \tBootstrap 4 Class"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"align-sel",
+				"align-self-lg-center \tBootstrap 4 Class"
+			],
+			[
+				"al",
+				"align-middle \tBootstrap 4 Class"
+			],
+			[
+				"html",
+				"htmlspecialchars"
+			],
+			[
+				"justify-content",
+				"justify-content-center \tBootstrap 4 Class"
+			],
+			[
 				"ht",
 				"htmlspecialchars"
 			],
@@ -26,10 +50,6 @@
 			[
 				"container",
 				"container-fluid \tBootstrap 4 Class"
-			],
-			[
-				"al",
-				"align-content-center \tBootstrap 4 Class"
 			],
 			[
 				"index",
@@ -78,10 +98,6 @@
 			[
 				"conten",
 				"align-content-center \tBootstrap 4 Class"
-			],
-			[
-				"alig",
-				"align-self-lg-center \tBootstrap 4 Class"
 			],
 			[
 				"col",
@@ -134,10 +150,6 @@
 			[
 				"bord",
 				"border-color"
-			],
-			[
-				"back",
-				"background-color"
 			],
 			[
 				"node",
@@ -502,18 +514,6 @@
 			[
 				"leplus",
 				"leplusGrand"
-			],
-			[
-				"mont",
-				"monTableau"
-			],
-			[
-				"indle",
-				"indleplusGrand"
-			],
-			[
-				"mon",
-				"monTableau"
 			]
 		]
 	},
@@ -523,16 +523,7 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 7799,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "inc/test.php",
-			"settings":
-			{
-				"buffer_size": 629,
+				"buffer_size": 7443,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -541,7 +532,16 @@
 			"file": "js/script.js",
 			"settings":
 			{
-				"buffer_size": 6036,
+				"buffer_size": 7123,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "inc/verif_send_mail.inc.php",
+			"settings":
+			{
+				"buffer_size": 1488,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -596,27 +596,30 @@
 	],
 	"file_history":
 	[
+		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/slide.inc.php",
+		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/maps.inc.php",
+		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/css/style.css",
+		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/accueil.inc.php",
+		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/presEquipe.inc.php",
+		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/presMetiers.inc.php",
+		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/presFormation.inc.php",
+		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/verif_send_mail.inc.php",
+		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/functions.inc.php",
+		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/js/script.js",
+		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/verif_send_mail.php",
+		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/test.php",
 		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/SITES & EXERCICES/jquery/20171026 - JQuery bis/js/jq20171026.js",
 		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/template index.html",
 		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/toto.html",
-		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/presFormation.inc.php",
-		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/css/style.css",
-		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/presEquipe.inc.php",
 		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/presTechnos.inc.php",
-		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/presMetiers.inc.php",
 		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/Lucie/css/style.css",
 		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/index.php",
-		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/js/script.js",
-		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/slide.inc.php",
 		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/nav.inc.php",
 		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/functions_inc.php",
-		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/test.php",
-		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/maps.inc.php",
 		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc_maxime/slide.inc.php",
 		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc_maxime/accueil.inc.php",
 		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc_maxime/maps.inc.php",
 		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/slide.txt",
-		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/FATAL ERROR 2017/Projet de Groupe/pjg4-20171106/www/inc/verif_send_mail.php",
 		"/C/wamp64/barimage.bmp",
 		"/C/wamp64/scripts/wampserver.lib.php",
 		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/SITES & EXERCICES/php/php20171030/inc/functions_inc.php",
@@ -720,14 +723,11 @@
 		"/C/Users/UTILISATEUR/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
 		"/C/Users/UTILISATEUR/AppData/Roaming/Sublime Text 3/Packages/LiveReload/LiveReload.sublime-settings",
 		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/SITES/javascript/TP-JS-DIVERS-2/css/style.css",
-		"/C/Users/UTILISATEUR/AppData/Roaming/Sublime Text 3/Packages/User/LiveReload.sublime-settings",
-		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/SITES/javascript/TP-JS-DIVERS/js/script.js",
-		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/SITES/javascript/index.html",
-		"/C/Users/UTILISATEUR/Documents/AFORMAC - DLEGER/SITES/javascript/TP-JS-DIVERS/index.html"
+		"/C/Users/UTILISATEUR/AppData/Roaming/Sublime Text 3/Packages/User/LiveReload.sublime-settings"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 30.0
 	},
 	"find_in_files":
 	{
@@ -741,6 +741,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"text-white ",
+			"test",
 			"dropdown-item",
 			"./img/",
 			"./img",
@@ -789,133 +791,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7799,
+						"buffer_size": 7443,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1333,
-								1320
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										1333,
-										1334
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/double_quote.png",
-										"region.greenish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										1319,
-										1320
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-							],
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 445.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "inc/test.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 629,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								595,
-								595
+								6240,
+								6231
 							]
 						],
 						"settings":
@@ -938,87 +822,87 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
 							],
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3385.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "js/script.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6036,
+						"buffer_size": 7123,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								932,
-								932
+								985,
+								985
 							]
 						],
 						"settings":
@@ -1030,8 +914,8 @@
 								{
 									"1":
 									[
-										1034,
-										1035
+										1012,
+										1013
 									]
 								},
 								"icon":
@@ -1046,8 +930,8 @@
 								{
 									"1":
 									[
-										931,
-										932
+										909,
+										910
 									]
 								},
 								"unmatched":
@@ -1056,67 +940,185 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
 							],
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 103.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "inc/verif_send_mail.inc.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1449,
+								1449
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1452,
+										1453
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1441,
+										1442
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1127,7 +1129,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -1172,7 +1174,7 @@
 	"project": "pjg4-20171106.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
