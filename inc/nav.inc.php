@@ -1,11 +1,11 @@
-<div class="pos-f-t fixed-top">
-  <nav id="nav2" class="navbar navbar-dark bg-dark">
+<div  id="nav2" class="pos-f-t fixed-top">
+  <nav class="navbar navbar-dark bg-dark float-right">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   </nav>
   <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
+    <div class="bg-dark p-4 text-right">
       <ul class="navbar-nav">
 			  <li class="nav-item active">
 					<a class="nav-link text-white" href="#sec0">Accueil</a>

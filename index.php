@@ -27,30 +27,30 @@
 			<ul class="navbar-nav">
 
 			  <li class="nav-item">
-				<a class="nav-link text-white" href="#sec-1">Accueil <span class="sr-only">(current)</span></a>
+				<a class="nav-link text-white lien" href="#sec-1">Accueil <span class="sr-only">(current)</span></a>
 			  </li>
 
 			  <li class="nav-item dropdown">
-				<a class="nav-link text-white dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				  Présentation
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-				  <a class="dropdown-item" href="#sec-2">Formation</a>
-				  <a class="dropdown-item" href="#sec-3">Métiers</a>
-				  <a class="dropdown-item" href="#sec-4">Équipe</a>
+				  <a class="dropdown-item lien" href="#sec-2">Formation</a>
+				  <a class="dropdown-item lien" href="#sec-3">Métiers</a>
+				  <a class="dropdown-item lien" href="#sec-4">Équipe</a>
 				</div>
 			  </li>
 
 			  <li class="nav-item">
-				<a class="nav-link text-white" href="#sec-5">Galerie</a>
+				<a class="nav-link text-white lien" href="#sec-5">Galerie</a>
 			  </li>
 
 			  <li class="nav-item">
-				<a class="nav-link text-white" href="#sec-6">Adresse</a>
+				<a class="nav-link text-white lien" href="#sec-6">Adresse</a>
 			  </li>
 
 			  <li class="nav-item">
-				<a class="nav-link text-white" href="#sec-7">Contact</a>
+				<a class="nav-link text-white lien" href="#sec-7">Contact</a>
 			  </li>
 
 			</ul>
@@ -108,96 +108,115 @@
 		</section>
 
 		<!-- Section 7 - Contact -->
-		<section class="container" id='sec-7'>
+		<section class="container-fluid bg-info" id='sec-7'>
+			<div class="container bg-danger">
+<!-- 				<?php
+					//Apple du fichier contenant les fonctions de traitement du formulaire
+					require_once './inc/functions_inc.php';
 
-			<?php
-				//Apple du fichier contenant les fonctions de traitement du formulaire
-				require_once './inc/functions_inc.php';
+					//si le formulaire est posté, on traite les données
+					if(!empty($_POST['inputNom'])){
+						$nom = htmlspecialchars($_POST['inputNom']);
+						$prenom = htmlspecialchars($_POST['inputPrenom']);
+						$email = htmlspecialchars($_POST['inputEmail']);
+						$objet = htmlspecialchars($_POST['inputObjet']);
+						$message = htmlspecialchars($_POST['inputMessage']);
 
-				//si le formulaire est posté, on traite les données
-				if(!empty($_POST['inputNom'])){
-					$nom = htmlspecialchars($_POST['inputNom']);
-					$prenom = htmlspecialchars($_POST['inputPrenom']);
-					$email = htmlspecialchars($_POST['inputEmail']);
-					$objet = htmlspecialchars($_POST['inputObjet']);
-					$message = htmlspecialchars($_POST['inputMessage']);
+						$nom     = format_nom($nom);
+						$prenom  = format_prenom($prenom);
+						$email   = format_email($email);
+						$objet   = format_objet($objet);
+						$message = format_message($message);
 
-					$nom     = format_nom($nom);
-					$prenom  = format_prenom($prenom);
-					$email   = format_email($email);
-					$objet   = format_objet($objet);
-					$message = format_message($message);
-
-					//Si toutes les variables sont définies, on envoie le mail
-					if($nom != null && $email != null && $objet != null && $message != null) {
-						//envoiMail($email,$objet,$message,$nom);
-						echo ("envoi du mail");
+						//Si toutes les variables sont définies, on envoie le mail
+						if($nom != null && $email != null && $objet != null && $message != null) {
+							//envoiMail($email,$objet,$message,$nom);
+							echo ("envoi du mail");
+						}
 					}
-				}
-			?>
- 			<!-- 1° Vérifier avec JS que le formulaire est correctement rempli -->
-			<!-- 2° Envoyer en AJAX au PHP -->
-			<!-- 3° Vérifier dans PHP que le formulaire est correct -->
-			<!-- 4° Envoyer le mail -->
+				?>
+ -->	 		<!-- 1° Vérifier avec JS que le formulaire est correctement rempli -->
+				<!-- 2° Envoyer en AJAX au PHP -->
+				<!-- 3° Vérifier dans PHP que le formulaire est correct -->
+				<!-- 4° Envoyer le mail -->
 
-			<div class="text-center"><h1>Contact</h1></div>
-			<div class="row justify-content-center">
-				<div class="col-6">
-
-				<form id="contact" class="px-5 py-2 bg-dark rounded" method="POST">
-
-				  <div class="form-group text-center m-0">
-					<label for="labelNotice" class="text-white text-center">* Champs Obligatoires</label>
-				  </div>
-
-				  <div class="form-group row">
-					<label for="labelNom" class="col-sm-3 col-form-label text-white text-right">*Nom :</label>
-					<div class="col-sm-9">
-					  <input type="text" class="form-control rounded" id="inputNom">
-					</div>
-				  </div>
-
-				  <div class="form-group row">
-					<label for="labelPrenom" class="col-sm-3 col-form-label text-white text-right">*Prénom :</label>
-					<div class="col-sm-9">
-					  <input type="text" class="form-control rounded" id="inputPrenom">
-					</div>
-				  </div>
-
-				  <div class="form-group row">
-					<label for="labelEmail" class="col-sm-3 col-form-label text-white text-right">*Mail :</label>
-					<div class="col-sm-9">
-					  <input type="email" class="form-control rounded" id="inputEmail">
-					</div>
-				  </div>
-
-				  <div class="form-group row">
-					<label for="labelPhone" class="col-sm-3 col-form-label text-white text-right">Téléphone :</label>
-					<div class="col-sm-9">
-					  <input type="text" class="form-control rounded" id="inputPhone">
-					</div>
-				  </div>
-
-				  <div class="form-group row">
-					<label for="labelObjet" class="col-sm-3 col-form-label text-white text-right">*Sujet :</label>
-					<div class="col-sm-9">
-					  <input type="text" class="form-control rounded" id="inputObjet">
-					</div>
-				  </div>
-
-				  <div class="form-group text-center">
-					<label for="labelMessage" class="text-white text-center">*Message :</label>
-					<textarea class="form-control rounded" id="inputMessage" rows="3"></textarea>
-				  </div>
-
-				  <div class="form-group m-0 text-center">
-					<input id="envoi" class="btn btn-lg text-white" type="submit" name="Envoi" value="Envoi" style="background-color: #000000">
-				  </div>
 				
-				</form>
-				<div id="statusFormulaire"></div>
+				<h1 class="text-center">Contact</h1>
+				
+				<div class="row justify-content-center bg-primary">
+
+						<form id="contact" class="col-8 px-4 py-2 bg-dark text-white rounded">
+
+						  <div class="form-row justify-content-center">
+							  <div class="form-group text-center">
+								<label for="labelNotice" class="">* Champs Obligatoires</label>
+							  </div>
+						  </div>
+
+						  <div class="form-row justify-content-center bg-success">
+							  <div class="form-group">
+								<label for="labelNom" class="col-form-label text-right">*Nom :</label>
+								<div class="">
+								  <input type="text" class="form-control rounded" id="inputNom">
+								</div>
+							  </div>
+						  </div>
+
+						  <div class="form-row justify-content-center">
+							  <div class="form-group">
+								<label for="labelPrenom" class="col-form-label text-right">*Prénom :</label>
+								<div class="">
+								  <input type="text" class="form-control rounded" id="inputPrenom">
+								</div>
+							  </div>
+						  </div>
+
+						  <div class="form-row justify-content-center">
+							  <div class="form-group">
+								<label for="labelEmail" class="col-form-label text-right">*Mail :</label>
+								<div class="">
+								  <input type="email" class="form-control rounded" id="inputEmail">
+								</div>
+							  </div>
+						  </div>
+
+						  <div class="form-row justify-content-center">
+							  <div class="form-group">
+								<label for="labelPhone" class="col-form-label text-right">Téléphone :</label>
+								<div class="">
+								  <input type="text" class="form-control rounded" id="inputPhone">
+								</div>
+							  </div>
+						  </div>
+
+						  <div class="form-row justify-content-center">
+							  <div class="form-group">
+								<label for="labelObjet" class="col-form-label text-right">*Sujet :</label>
+								<div class="">
+								  <input type="text" class="form-control rounded" id="inputObjet">
+								</div>
+							  </div>
+						  </div>
+
+						  <div class="form-row justify-content-center">
+							  <div class="form-group text-center">
+								<label for="labelMessage" class="">*Message :</label>
+								<textarea class="form-control rounded" id="inputMessage" rows="3"></textarea>
+							  </div>
+						  </div>
+
+						  <div class="form-row justify-content-center">
+							<input id="envoi" class="btn btn-lg" type="submit" name="Envoi" value="Envoi" style="background-color: #000000; color:white">
+						  </div>
+
+						  <div id="statusFormulaire"></div>
+
+						</form>
+
+						
+
+				</div>
 			</div>
-		</div>
 		</section>
 
 	</div>
@@ -217,7 +236,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 	<!-- script Personnel -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSBobvPyqEMcubZhaCZ_OWa8n8HM4DTYw&callback=initMap"
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdExR2YLhz94p7zedVkV2cYgLGPBKrv0U&callback=initMap"
     async defer></script>
 	<script type="text/javascript" src="./js/script.js"></script>
 
