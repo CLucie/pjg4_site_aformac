@@ -7,10 +7,7 @@
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4 text-right">
       <ul class="navbar-nav">
-			  <li class="nav-item active">
-					<a class="nav-link text-white" href="#sec0">Accueil</a>
-			  </li>
-			   <li class="nav-item">
+			   <li class="nav-item active">
 			   		<a class="nav-link text-white" href="#sec-1">Formation</a>
 			   </li>
 			   <li class="nav-item">
