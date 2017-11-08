@@ -1,5 +1,5 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-		  <div id="slidert" class="carousel-inner w-50">
+<div id="carouselExampleIndicators" class="carousel slide w-50" data-ride="carousel">
+		  <div id="slidert" class="carousel-inner">
 		    <?php
 				$openSlide = fopen('slide.txt',"r");
 				$openSlide2 = fopen('slide2.txt',"r");
