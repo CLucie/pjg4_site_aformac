@@ -58,13 +58,13 @@ h1, h2, h3, h4, h5, h6, nav{
   display: none;
 }
 
-  #nav1{
+ /*  #nav1{
     display: block;
   } 
   #nav2{
     display: none;
   }
-
+ */
 
 @media screen and (max-width: 640px){
     #carouselExampleIndicators{
@@ -84,12 +84,12 @@ h1, h2, h3, h4, h5, h6, nav{
       background-color: #464646;
       color: white;
     }
-  #nav1{
+ /*  #nav1{
     display: none;
   }
   #nav2{
     display: block;
-  }
+  } */
 }
 
 /*css section présentation formation*/

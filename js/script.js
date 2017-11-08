@@ -7,10 +7,10 @@ $(document).ready(function(){
 	$('section').css('paddingTop',($('nav').height()*2).toString()+"px");
 
 	//Recalcul en fonction de la taille de la fenêtre durant la navigation
-	$(window).resize(function(){
+	// $(window).resize(function(){
 		$('section').css('height',$(window).height().toString()+"px");
 		$('section').css('paddingTop',($('nav').height()*2).toString()+"px");
-	});
+	// });
 
 	//Sur sélection dans le menu
 	$('.lien').click(function(){

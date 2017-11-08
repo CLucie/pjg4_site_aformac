@@ -20,18 +20,22 @@
 	<!-- header -->
 	<header>
 
-		<nav id="nav1" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
-		  
-		  <div class="container collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+		<nav id="nav1" class="navbar navbar-expand-sm navbar-dark bg-dark text-white fixed-top">
+
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+		  <div class="justify-content-center collapse navbar-collapse" id="navbarNavDropdown">
 
 			<ul class="navbar-nav">
 
 			  <li class="nav-item">
-				<a class="nav-link text-white lien" href="#sec-1">Accueil <span class="sr-only">(current)</span></a>
+				<a class="nav-link lien" href="#sec-1">Accueil <span class="sr-only">(current)</span></a>
 			  </li>
 
 			  <li class="nav-item dropdown">
-				<a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				  Présentation
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -42,15 +46,15 @@
 			  </li>
 
 			  <li class="nav-item">
-				<a class="nav-link text-white lien" href="#sec-5">Galerie</a>
+				<a class="nav-link lien" href="#sec-5">Galerie</a>
 			  </li>
 
 			  <li class="nav-item">
-				<a class="nav-link text-white lien" href="#sec-6">Adresse</a>
+				<a class="nav-link lien" href="#sec-6">Adresse</a>
 			  </li>
 
 			  <li class="nav-item">
-				<a class="nav-link text-white lien" href="#sec-7">Contact</a>
+				<a class="nav-link lien" href="#sec-7">Contact</a>
 			  </li>
 
 			</ul>
@@ -58,7 +62,7 @@
 		  </div>
 
 		</nav>
-		<?php require_once "./inc/nav.inc.php";?>
+	<!-- <?php //require_once "./inc/nav.inc.php";?> -->
 
 	</header>
 
@@ -66,23 +70,21 @@
 	<div id="onePage" class="container-fluid justify-content-center">
 
 		<!-- Section 1 - Accueil -->
-		<section class="container-fluid" id='sec-1'>
-			<!-- <div class="text-center"><h1>Accueil</h1></div> -->
+		<section class="container" id='sec-1'>
 			<div class="row justify-content-center">
 				<?php require_once "./inc/accueil.inc.php";?>
 			</div>
-			
 		</section>
 		
 		<!-- Section 2 - Présentation Formation -->
-		<section class="container-fluid" id='sec-2'>
-			<div class="text-center"><h1>Présentation de la Formation</h1></div>
+		<section class="container" id='sec-2'>
+			<div class="row text-center"><h1>Présentation de la Formation</h1></div>
 			<?php require_once "./inc/presFormation.inc.php"; ?>
 		</section>
 
 		<!-- Section 3 - Présentation Métiers -->
 		<section class="container-fluid" id='sec-3'>
-			<div class="text-center"><h1>Métiers</h1></div>
+			<div class="container text-center"><h1>Métiers</h1></div>
 			<?php require_once "./inc/presMetiers.inc.php"; ?>
 			
 			<div id="titleTechnos" class="text-center"><h1>Technos</h1></div>
@@ -102,9 +104,8 @@
 		</section>
 
 		<!-- Section 6 - Adresse -->
-		<section class="" id='sec-6'>
-			<!-- <div class="text-center"><h1>Adresse</h1></div> -->
-				<?php require_once "./inc/maps.inc.php"; ?>			
+		<section class="container-fluid" id='sec-6'>
+			<?php require_once "./inc/maps.inc.php"; ?>			
 		</section>
 
 		<!-- Section 7 - Contact -->
