@@ -145,61 +145,75 @@
 				
 				<div class="row justify-content-center bg-primary">
 
-						<form id="contact" class="col-12 col-sm-9 col-md-6 col-lg-8 col-xl-8 px-5 py-2 bg-dark text-white rounded">
+						<form id="contact" class="col-8 px-4 py-2 bg-dark text-white rounded">
 
-						  <div class="form-group text-center m-0 row">
-							<label for="labelNotice" class="">* Champs Obligatoires</label>
+						  <div class="form-row justify-content-center">
+							  <div class="form-group text-center">
+								<label for="labelNotice" class="">* Champs Obligatoires</label>
+							  </div>
 						  </div>
 
-						  <div class="form-group row">
-							<label for="labelNom" class="col-form-label text-right">*Nom :</label>
-							<div class="">
-							  <input type="text" class="form-control rounded" id="inputNom">
-							</div>
-						  </div>
-
-						  <div class="form-group row">
-							<label for="labelPrenom" class="col-form-label text-right">*Prénom :</label>
-							<div class="">
-							  <input type="text" class="form-control rounded" id="inputPrenom">
-							</div>
-						  </div>
-
-						  <div class="form-group row">
-							<label for="labelEmail" class="col-form-label text-right">*Mail :</label>
-							<div class="">
-							  <input type="email" class="form-control rounded" id="inputEmail">
-							</div>
-						  </div>
-
-						  <div class="form-group row">
-							<label for="labelPhone" class="col-form-label text-right">Téléphone :</label>
-							<div class="">
-							  <input type="text" class="form-control rounded" id="inputPhone">
-							</div>
-						  </div>
-
-						  <div class="form-group row justify-content-center">
-							<label for="labelObjet" class="col-form-label text-right">*Sujet :</label>
-							<div class="">
-							  <input type="text" class="form-control rounded" id="inputObjet">
-							</div>
+						  <div class="form-row justify-content-center bg-success">
+							  <div class="form-group">
+								<label for="labelNom" class="col-form-label text-right">*Nom :</label>
+								<div class="">
+								  <input type="text" class="form-control rounded" id="inputNom">
+								</div>
+							  </div>
 						  </div>
 
 						  <div class="form-row justify-content-center">
-							  <div class="form-group col-6 text-center">
-								<label for="labelMessage" class="text-center">*Message :</label>
+							  <div class="form-group">
+								<label for="labelPrenom" class="col-form-label text-right">*Prénom :</label>
+								<div class="">
+								  <input type="text" class="form-control rounded" id="inputPrenom">
+								</div>
+							  </div>
+						  </div>
+
+						  <div class="form-row justify-content-center">
+							  <div class="form-group">
+								<label for="labelEmail" class="col-form-label text-right">*Mail :</label>
+								<div class="">
+								  <input type="email" class="form-control rounded" id="inputEmail">
+								</div>
+							  </div>
+						  </div>
+
+						  <div class="form-row justify-content-center">
+							  <div class="form-group">
+								<label for="labelPhone" class="col-form-label text-right">Téléphone :</label>
+								<div class="">
+								  <input type="text" class="form-control rounded" id="inputPhone">
+								</div>
+							  </div>
+						  </div>
+
+						  <div class="form-row justify-content-center">
+							  <div class="form-group">
+								<label for="labelObjet" class="col-form-label text-right">*Sujet :</label>
+								<div class="">
+								  <input type="text" class="form-control rounded" id="inputObjet">
+								</div>
+							  </div>
+						  </div>
+
+						  <div class="form-row justify-content-center">
+							  <div class="form-group text-center">
+								<label for="labelMessage" class="">*Message :</label>
 								<textarea class="form-control rounded" id="inputMessage" rows="3"></textarea>
 							  </div>
 						  </div>
 
-						  <div class="form-row m-0 justify-content-center">
+						  <div class="form-row justify-content-center">
 							<input id="envoi" class="btn btn-lg" type="submit" name="Envoi" value="Envoi" style="background-color: #000000; color:white">
 						  </div>
-						
+
+						  <div id="statusFormulaire"></div>
+
 						</form>
 
-						<div id="statusFormulaire"></div>
+						
 
 				</div>
 			</div>
