@@ -78,46 +78,53 @@
 		
 		<!-- Section 2 - Présentation Formation -->
 		<section class="container" id='sec-2'>
-			<div class="row text-center"><h1>Présentation de la Formation</h1></div>
+			<div class="row justify-content-center my-4">
+				<h1>Présentation de la Formation</h1>
+			</div>
 			<?php require_once "./inc/presFormation.inc.php"; ?>
 		</section>
 
 		<!-- Section 3 - Présentation Métiers -->
-		<section class="container-fluid" id='sec-3'>
-			<div class="container text-center"><h1>Métiers</h1></div>
+		<section class="container" id='sec-3'>
+			<div class="row justify-content-center my-4">
+				<h1>Métiers</h1>
+			</div>
 			<?php require_once "./inc/presMetiers.inc.php"; ?>
-			
-			<div id="titleTechnos" class="text-center"><h1>Technos</h1></div>
+			<hr>
+			<div id="titleTechnos" class="row justify-content-center my-4">
+				<h1>Technos</h1>
+			</div>
 			<?php require_once "./inc/presTechnos.inc.php"; ?>
 		</section>
 
 		<!-- Section 4 - Présentation Equipe -->
-		<section class="container-fluid" id='sec-4'>
-			<div class="text-center"><h1>Présentation de l'Équipe</h1></div>
+		<section class="container" id='sec-4'>
+			<div class="row justify-content-center my-4">
+				<h1>Présentation de l'Équipe</h1>
+			</div>
 			<?php require_once "./inc/presEquipe.inc.php"; ?>
 		</section>
 
 		<!-- Section 5 - Galerie -->
-		<section class="container-fluid" id='sec-5'>
-			<div class="text-center"><h1>Galerie</h1></div>
+		<section class="container" id='sec-5'>
+			<div class="row justify-content-center my-4">
+				<h1>Galerie</h1>
+			</div>
+			<div class="row justify-content-center">
 				<?php require_once "./inc/slide.inc.php";?>
+			</div>
 		</section>
 
 		<!-- Section 6 - Adresse -->
-		<section class="container-fluid" id='sec-6'>
-			<?php require_once "./inc/maps.inc.php"; ?>			
+		<section class="container" id='sec-6'>
+				<?php require_once "./inc/maps.inc.php"; ?>	
 		</section>
 
 		<!-- Section 7 - Contact -->
-		<section class="container-fluid" id='sec-7'>
-			<div class="container">
-
-		 		<!-- 1° Vérifier avec JS que le formulaire est correctement rempli -->
-				<!-- 2° Envoyer en AJAX au PHP -->
-				<!-- 3° Vérifier dans PHP que le formulaire est correct -->
-				<!-- 4° Envoyer le mail -->
-				
-				<h1 class="text-center">Contact</h1>
+		<section class="container" id='sec-7'>
+			<div class="row justify-content-center my-4">
+				<h1>Contact</h1>
+			</div>
 				
 				<div class="row justify-content-center">
 
@@ -182,9 +189,11 @@
 	</div>
 
 	<!-- footer -->
-	<footer class="bg-dark text-white">
-		<div class="text-center">
-			<p>&copy; 2017</p>
+	<footer class="container-fluid bg-dark text-white">
+		<div class="row text-center justify-content-around">
+			<p class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Aformac Vichy</p>
+			<p class="col-lg-3 col-md-3 col-sm-12 col-xs-12">&copy; Fatal-Error 2017</p>
+			<p class="col-lg-3 col-md-3 col-sm-12 col-xs-12">Maxime, Lucie &amp; Daniel</p>
 		</div>
 	</footer>
 

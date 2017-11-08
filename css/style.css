@@ -22,34 +22,35 @@ h1, h2, h3, h4, h5, h6, nav{
 
 /* Pour la map */
 #map {
-        height: 100%;
-      }
-      #adresse{
-        position: absolute;
-        background-color: #e6e6e6;
-        z-index: 1;
-        padding: 1%;
-        opacity: 0.8;
-        margin-top: 2%;
-        margin-left: 10%;
-        box-shadow: 2px 2px black;
-      }
+  height: 90%;
+}
 
-#sec-1{
+#adresse{
+  position: absolute;
+  background-color: #e6e6e6;
+  z-index: 1;
+  padding: 1%;
+  opacity: 0.8;
+  margin-top: 2%;
+  margin-left: 10%;
+  box-shadow: 2px 2px black;
+}
+
+.container-fluid, #sec-1, #sec-3, #sec-5 {
     background-color: #464646;
     color: white;
   }
 
-#sec-5{
-    background-color: #464646;
-    color: white;
-  }
+#sec-2, #sec-4, #sec-6, #sec-7 {
+  background-color: white;
+  color: Black;
+}
 
 #carouselExampleIndicators{
     display: block;
-    margin-left: 30%;
+/*     margin-left: 30%;
     margin-top: 10%;
-}
+ */}
 
 #potofolio{
   display: none;
@@ -84,12 +85,12 @@ h1, h2, h3, h4, h5, h6, nav{
       background-color: #464646;
       color: white;
     }
- /*  #nav1{
-    display: none;
-  }
-  #nav2{
-    display: block;
-  } */
+ /* #nav1{
+      display: none;
+    }
+    #nav2{
+      display: block;
+    } */
 }
 
 /*css section présentation formation*/
@@ -98,21 +99,16 @@ h1, h2, h3, h4, h5, h6, nav{
   color: #ffffff;
 }
 
-#imgFormation{
+ #imgFormation{
   height: 40%;
   width: 40%;
 }
-/*fin css section présentation formation*/
+ *//*fin css section présentation formation
 
 /*----*/
 
 
 /*css section présentation metiers & technos*/
-#sec-3{
-  background-color: #464646;
-  color: #ffffff;
-}
-
 #imgMetier, #imgTechno{
   height: 20%;
 }
@@ -126,9 +122,7 @@ h3{
   font-style: italic;
 }
 
-#rowMetier2{
-  margin-top: 2%;
-}
+
 /*fin CSS présentation formation*/
 
 /*----*/
