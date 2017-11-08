@@ -180,6 +180,14 @@ function initMap() {
 	  center: {lat: 46.1158089, lng: 3.4358138000000054},
 	  zoom: 17
 	});
+	
+	var marker = new google.maps.Marker({
+   position: {lat: 46.1158089, lng: 3.4358138000000054},
+   map: map,
+   title: 'AFORMAC'
+   });
+
+marker.setMap(map);
 }
 
 //Fonction de vérification du champs email
