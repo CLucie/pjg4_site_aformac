@@ -178,7 +178,7 @@
 						<input id="envoi" class="btn btn-lg" type="submit" name="Envoi" value="Envoi" style="background-color: #000000; color:white">
 					  </div>
 
-					  <div id="statusFormulaire"></div>
+					  <div id="statusFormulaire" class="text-center"></div>
 
 					</form>
 

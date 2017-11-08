@@ -9,7 +9,7 @@
 		$nom = htmlspecialchars($_POST['nom']);
 		$prenom = htmlspecialchars($_POST['prenom']);
 		$email = htmlspecialchars($_POST['email']);
-		$telephone = htmlspecialchars($_POST['phone']);
+		$phone = htmlspecialchars($_POST['phone']);
 		$objet = htmlspecialchars($_POST['objet']);
 		$message = htmlspecialchars($_POST['message']);
 
@@ -32,12 +32,12 @@
 
 			$destinataire = $email;
 			$sujet = $objet;
-			$message = 'Le message que vous avez posté : ' . $message;
+			$message = 'Le message posté : ' . $message . 'coordonnées de la personne:' . $phone;
 
 			if (mail($destinataire, $sujet, $message, $headers)) {
-				$message = 'Résultats envoyés sur votre boite mail';    
+				$message = 'Message bien pris en compte. Merci.';    
 				} else {
-					$message = "Impossible d'envoyer votre mail";
+					$message = "Impossible d'envoyer votre message";
 				}
 
 		} else {
@@ -45,7 +45,7 @@
 			}
 
 	} else {
-		$message = 'Resultats : ' . $message;
+		$message = 'Message : ' . $message;
 	}
 	echo $message;
 

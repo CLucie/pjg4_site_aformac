@@ -7,10 +7,10 @@ $(document).ready(function(){
 	$('section').css('paddingTop',($('nav').height()*2).toString()+"px");
 
 	//Recalcul en fonction de la taille de la fenêtre durant la navigation
-	// $(window).resize(function(){
+	$(window).resize(function(){
 		$('section').css('height',$(window).height().toString()+"px");
 		$('section').css('paddingTop',($('nav').height()*2).toString()+"px");
-	// });
+	});
 
 	//Sur sélection dans le menu
 	$('.lien').click(function(){
@@ -55,16 +55,12 @@ $(document).ready(function(){
 			if(value == "email") {
 				shouldSubmit = shouldSubmit && (isEmail($("#"+index).val()));
 			}
-			console.log($("#"+index).val());
+			// console.log($("#"+index).val());
 		});
 		
 		if(shouldSubmit) {
 			console.log(shouldSubmit + "- les champs sont bien remplis");
-		}else{
-			console.log("Il y a des erreurs dans le formulaire");
-		}
-
-		$.ajax({ //Fonction AJAX (séparer les paramètres par une "virgule")
+			$.ajax({ //Fonction AJAX (séparer les paramètres par une "virgule")
 			url : './inc/verif_send_mail.inc.php',
 		 	type : 'POST',
 		 	data : 'nom=' + $('#inputNom').val() + '&prenom=' + $('#inputPrenom').val() + '&email=' + $('#inputEmail').val() + '&phone=' + $('#inputPhone').val() + '&objet=' + $('#inputObjet').val() + '&message=' + $('#inputMessage').val(),
@@ -73,7 +69,12 @@ $(document).ready(function(){
 				$("#statusFormulaire").html(code_html);},
 			error : function(resultat, statut, erreur){ //en cas d'esseur
 				alert('Ajax Error: ' + statut + erreur);}
- 		});
+	 		});
+		}else{
+			console.log("Il y a des erreurs dans le formulaire");
+			$("#statusFormulaire").html("Les champs du formulaire ne sont pas tous correct");
+		}
+
 	});
 
 
