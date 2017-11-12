@@ -6,13 +6,11 @@ $(document).ready(function(){
 	$('section').css('height',$(window).height().toString()+"px");
 	$('section').css('paddingTop',($('nav').height()*2).toString()+"px");
 
-
 	//Recalcul en fonction de la taille de la fenêtre durant la navigation
 	$(window).resize(function(){
 		$('section').css('height',$(window).height().toString()+"px");
 		$('section').css('paddingTop',($('nav').height()*2).toString()+"px");
 	});
-
 
 	//Sur sélection dans le menu
 	$('.lien').click(function(){
@@ -22,6 +20,16 @@ $(document).ready(function(){
 		$('html').animate({scrollTop:$(lien).offset().top},1000);	
 		}
 	}); //fin sélection de menu
+
+	//Sur sélection dans le sous-menu
+  $('.dropdown-menu').on("click", function(e){
+    toto = $(this).next();
+    console.log(toto);
+    e.stopPropagation();
+    e.preventDefault();
+
+	}); //fin sélection de sous-menu
+
 
 
 	//Sur bouton Envoi du formulaire
@@ -180,13 +188,37 @@ function initMap() {
    title: 'AFORMAC'
    });
 
-	marker.setMap(map);
+marker.setMap(map);
 }
-
 
 //Fonction de vérification du champs email
 function isEmail(email) {
   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   return regex.test(email);
 }
+
+
+
+
+
+//Déclaration des champs du formulaire à tester
+
+
+
+
+//CI-DESSOUS A GARDER
+//Sur click dans les sections
+// $('section').click(function(){
+
+// 	var listeSections = $('section');
+// 	var indexSection = $(this).index();
+// 	var indexLast =  $('section').last().index();
+
+// 	var targetSection = (indexSection == indexLast) ? listeSections[0].id : listeSections[indexSection+1].id;
+
+// 	$('html').animate({
+// 		scrollTop:$('#'+targetSection).offset().top
+// 	},1000);
+
+// });
 
