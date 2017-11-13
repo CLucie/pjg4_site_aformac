@@ -32,13 +32,16 @@
 
 			$destinataire = $email;
 			$sujet = $objet;
-			$message = 'Le message posté : ' . $message . 'coordonnées de la personne:' . $phone;
+			$message = 'Message: ' . $message . "\r\n" .'Téléphone: ' . $phone . "\r\n";
 
-			if (mail($destinataire, $sujet, $message, $headers)) {
-				$message = 'Message bien pris en compte. Merci.';    
-				} else {
-					$message = "Impossible d'envoyer votre message";
-				}
+
+			recordMail($nom, $prenom, $destinataire, $phone, $sujet, $message);
+			
+			// if (mail($destinataire, $sujet, $message, $headers)) {
+			// 	$message = 'Message bien pris en compte. Merci.';    
+			// 	} else {
+			// 		$message = "Impossible d'envoyer votre message";
+			// 	}
 
 		} else {
 			$message = "Votre adresse email n'est pas correctement renseignée !";
@@ -47,6 +50,6 @@
 	} else {
 		$message = 'Message : ' . $message;
 	}
-	echo $message;
+	echo "<hr>" . $message;
 
 ?>

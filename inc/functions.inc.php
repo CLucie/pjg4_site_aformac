@@ -49,4 +49,24 @@ function envoiMail($mail, $obj, $contenu, $sender) {
     }
 }
 
+
+//Fonction d'enregistrement de mail en base de donnée
+function recordMail($nom, $prenom, $email, $phone, $sujet, $message) {
+
+  try{
+    $bdd = new PDO('mysql:host=localhost;dbname=client','adminclient','lZNlB1VEdBQu05XU');
+  }
+
+  catch(Exception $e) {
+    die('Erreur dans MySql : '.$e->getMessage());
+  }
+
+  $req = "INSERT INTO t_messages(id_contact, nom, prenom, email, phone, sujet, message) VALUES(NULL, '$nom', '$prenom', '$email', '$phone', '$sujet', '$message');";
+
+  echo $req . "<br>";
+
+  $bdd->exec($req);
+
+}
+
 ?>
